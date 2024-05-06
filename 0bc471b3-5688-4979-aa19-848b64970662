@@ -1,0 +1,125 @@
+<!DOCTYPE html><html  lang="en" data-capo=""><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="preconnect" href="https://api.mangadex.org" crossorigin="use-credentials">
+<link rel="stylesheet" href="/_nuxt/entry.D294azfM.css">
+<link rel="stylesheet" href="/_nuxt/mchunk-pg-auth.BaHsFv7v.css">
+<link rel="stylesheet" href="/_nuxt/mchunk-pg-misc.D6_aZQm1.css">
+<link rel="stylesheet" href="/_nuxt/mchunk-pg-author.CeEAnNQL.css">
+<link rel="stylesheet" href="/_nuxt/mchunk-pg-chapter.DBSEkZ7S.css">
+<link rel="stylesheet" href="/_nuxt/mchunk-pg-authors.BgNS5Gri.css">
+<link rel="stylesheet" href="/_nuxt/mchunk-pg-group.DuyBtH9u.css">
+<link rel="stylesheet" href="/_nuxt/mchunk-pg-create.CFZUPAUO.css">
+<link rel="stylesheet" href="/_nuxt/mchunk-pg-groups.CGXMl64Y.css">
+<link rel="stylesheet" href="/_nuxt/mchunk-pg-list.Do8tQFcx.css">
+<link rel="stylesheet" href="/_nuxt/mchunk-pg-my.F3_O7s3S.css">
+<link rel="stylesheet" href="/_nuxt/mchunk-pg-tag.DOmhwcM8.css">
+<link rel="stylesheet" href="/_nuxt/mchunk-pg-title.BX_BQW3y.css">
+<link rel="stylesheet" href="/_nuxt/mchunk-pg-titles.DipRHfw3.css">
+<link rel="stylesheet" href="/_nuxt/mchunk-pg-user.DXI_cqty.css">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/DboxzcOr.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/D-rTr0tg.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/CDE8MG0_.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/CbV_f-Cs.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/_SY4Xp_o.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/C3FQ5giT.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/BpPtvMUI.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/WhZQLDYb.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/A8-PaJED.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Bj6ntH7r.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/B5PBIdn0.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/DCJ6_Op3.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/DNGQI6KV.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/C0dtJryF.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/DI2IpVEn.js">
+<link rel="modulepreload" as="script" crossorigin href="/_nuxt/D9F9LqEc.js">
+<link rel="dns-prefetch" href="https://api.mangadex.org">
+<link rel="dns-prefetch" href="https://auth.mangadex.org">
+<link rel="dns-prefetch" href="https://www.google.com">
+<link rel="dns-prefetch" href="https://www.gstatic.com">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/pwa/icons/icon-180.png">
+<link rel="search" href="/opensearch.xml" title="MangaDex" type="application/opensearchdescription+xml">
+<script type="module" src="/_nuxt/DboxzcOr.js" crossorigin></script>
+
+<meta property="og:site_name" content="MangaDex">
+<meta property="og:title" content="MangaDex">
+<meta property="og:type" content="object">
+<meta property="og:url" content="https://mangadex.org">
+<meta name="description" content="Read manga online for free on MangaDex with no ads, high quality images and support scanlation groups!">
+<meta property="og:description" content="Read manga online for free on MangaDex with no ads, high quality images and support scanlation groups!">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://og.mangadex.org/og-image/default">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:url" content="https://og.mangadex.org/og-image/default">
+<meta property="og:image:secure_url" content="https://og.mangadex.org/og-image/default">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="MangaDex">
+<meta name="twitter:title" content="MangaDex">
+<meta name="twitter:description" content="Read manga online for free on MangaDex with no ads, high quality images and support scanlation groups!">
+<meta name="twitter:site" content="@MangaDexRE">
+<meta name="twitter:domain" content="mangadex.org">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image:src" content="https://og.mangadex.org/og-image/default">
+<meta property="og:locale:alternate" content="ar_AR">
+<meta property="og:locale:alternate" content="az_AZ">
+<meta property="og:locale:alternate" content="bg_BG">
+<meta property="og:locale:alternate" content="bn_IN">
+<meta property="og:locale:alternate" content="ca_ES">
+<meta property="og:locale:alternate" content="cs_CZ">
+<meta property="og:locale:alternate" content="da_DK">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="el_GR">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="eo_EO">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="es_LA">
+<meta property="og:locale:alternate" content="et_EE">
+<meta property="og:locale:alternate" content="fa_IR">
+<meta property="og:locale:alternate" content="fi_FI">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="he_IL">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="hr_HR">
+<meta property="og:locale:alternate" content="hu_HU">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="la_VA">
+<meta property="og:locale:alternate" content="lt_LT">
+<meta property="og:locale:alternate" content="ms_MY">
+<meta property="og:locale:alternate" content="ne_NP">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="nn_NO">
+<meta property="og:locale:alternate" content="pl_PL">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="pt_PT">
+<meta property="og:locale:alternate" content="ro_RO">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="og:locale:alternate" content="sk_SK">
+<meta property="og:locale:alternate" content="sr_RS">
+<meta property="og:locale:alternate" content="sv_SE">
+<meta property="og:locale:alternate" content="ta_IN">
+<meta property="og:locale:alternate" content="th_TH">
+<meta property="og:locale:alternate" content="tl_PH">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="uk_UA">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_HK">
+</head><body><div id="__nuxt"></div><div id="teleports"></div>
+<noscript>
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100%; gap: 2rem;">
+      <img
+        src="/img/cat-books.svg"
+        alt="Cat napping on a pile of books"
+        style="max-width: 400px"
+      />
+      <p style="font-weight: 500; text-align: center; font-size: 1.5rem; line-height: 2rem;">Please enable JavaScript to view MangaDex.</p>
+    </div>
+</noscript>
+    <script type="application/json" id="__NUXT_DATA__" data-ssr="false">[{"_errors":1,"serverRendered":2,"data":3,"state":4,"once":5},{},false,{},{},["Set"]]</script>
+<script>window.__NUXT__={};window.__NUXT__.config={public:{version:"git-20240407-1900-8a519e3e",apiUrl:"https://api.mangadex.org",baseUrl:"https://mangadex.org",cdnEdge:"https://mangadex.org",cdnOrigin:"https://uploads.mangadex.org",kcUrl:"https://auth.mangadex.org",kcClientId:"mangadex-frontend-stable",forumsUrl:"https://forums.mangadex.org",gtmId:"GTM-TS59XX9",recaptchaSiteKey:"6LflOrIaAAAAACcpRSiKQlt_X6bq-QcVjHTG1diJ",popularTitlesDeltaDays:"30"},app:{baseURL:"/",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script></body></html>
