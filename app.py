@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+import json
 import requests
 from flask import Flask,request,jsonify
 from flask_caching import Cache
@@ -14,32 +15,7 @@ base_url = "https://readm.today"
 pop_url = "https://readm.today/popular-manga"
 # ua = UserAgent()
 urls = []
-@cache.cached(timeout=3600)
-def popm():
-    pop = []
-    r = requests.get(pop_url)
-    soup = BeautifulSoup(r.content, features ='html.parser')
-    poster_div = soup.find_all('div',class_='poster-with-subject')
-    for manga in poster_div:
-        url = base_url+manga.find('a')["href"]
-        desc=str(manga.find('p',class_='desktop-only excerpt').text).strip()
-        if desc=='':
-            desc="Not avilable"
-        data = {
-            "title":manga.find("h2").text,
-            "poster": base_url + manga.find("img")['src'],
-            "desc": desc,
-            "url":url,
-            "chapters":chapter(url)
-        }
-        pop.append(data)
-    return pop
-def chapter(url):
-    r = requests.get(url)
-    soup = BeautifulSoup(r.content, features='html.parser')
-    td = soup.find_all('td')[1]
-    ch=td.find_all('div')[1]
-    return ch.text
+
 
 @app.route('/pages/',methods=['GET'])
 def pages():
@@ -60,7 +36,9 @@ def pages():
         return jsonify(pages[2:])
 @app.route('/popular',methods=['GET'])
 def popular():
-    data = popm()
-    return data
+    with open('pop.json','r') as f:
+        data = json.load(f)
+
+    return jsonify(data['data'])
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0",debug=True)
