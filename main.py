@@ -62,5 +62,5 @@ def pages():
 def popular():
     data = popm()
     return data
-app.run(host='0.0.0.0', debug=True)
-# chapter('https://readm.today/manga/soIo-IeveIing-220424')
+if __name__ == '__main__':
+    app.run()
