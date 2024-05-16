@@ -5,9 +5,9 @@ import json
 base_url = "https://readm.today"
 pop_url = "https://readm.today/popular-manga"
 
-def popm():
+def popm(url):
     pop = []
-    r = requests.get(pop_url)
+    r = requests.get(url)
     soup = BeautifulSoup(r.content, features ='html.parser')
     poster_div = soup.find_all('div',class_='poster-with-subject')
     for manga in poster_div:
@@ -23,11 +23,8 @@ def popm():
             "chapters":chapter(url)
         }
         pop.append(data)
-    data_d = {
-    "data":pop
-    }
-    with open('pop.json','w') as f:
-        json.dump(data_d,f)
+    return pop
+
 def chapter(url):
     r = requests.get(url)
     soup = BeautifulSoup(r.content, features='html.parser')
@@ -35,4 +32,10 @@ def chapter(url):
     ch=td.find_all('div')[1]
     return ch.text
 if __name__ == '__main__':
-    popm()
+    data = popm(pop_url) + popm(pop_url+'/2')
+    data_d = {
+    "data":data
+    }
+    with open('pop.json','w') as f:
+        json.dump(data_d,f)
+    print('done..')
