@@ -32,7 +32,7 @@ def chapter(url):
     ch=td.find_all('div')[1]
     return ch.text
 if __name__ == '__main__':
-    data = popm(pop_url) + popm(pop_url+'/2')
+    data = popm(pop_url) + popm(pop_url+'/2') + popm(pop_url+'/3') + popm(pop_url+'/4')
     data_d = {
     "data":data
     }
