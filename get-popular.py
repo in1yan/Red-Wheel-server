@@ -31,7 +31,7 @@ def chapter(url):
     soup = BeautifulSoup(r.content, features='html.parser')
     td = soup.find_all('td')[1]
     ch=td.find_all('div')[1]
-    return ch.text
+    return int(ch.text)
 if __name__ == '__main__':
     data = popm(pop_url) + popm(pop_url+'/2') + popm(pop_url+'/3') + popm(pop_url+'/4')
     data_d = {
