@@ -22,6 +22,7 @@ def popm(url):
             "url":url,
             "chapters":chapter(url)
         }
+        print(data)
         pop.append(data)
     return pop
 
