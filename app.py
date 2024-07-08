@@ -42,11 +42,11 @@ def popular():
 def anime_reads():
     with open('ani-reads.json','r') as f:
         data = json.load(f)
-        return jsonify(data)
+        return jsonify(data['data'])
 @app.route('/new-manga',methods=["GET"])
 def new_manga():
     with open('new-manga.json','r') as f:
         data = json.load(f)
-        return jsonify(data)
+        return jsonify(data['data'])
 if __name__ == '__main__':
     app.run(host="0.0.0.0",debug=True)
