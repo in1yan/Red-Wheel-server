@@ -2,11 +2,9 @@ from bs4 import BeautifulSoup
 import json
 import requests
 from flask import Flask,request,jsonify
-from flask_caching import Cache
 
 
 app = Flask(__name__)
-cache = Cache(app,config={'CACHE_TYPE':'simple','CACHE_DEFAULT_TIMEOUT':3600})
 
 
 
@@ -40,5 +38,15 @@ def popular():
         data = json.load(f)
 
     return jsonify(data['data'])
+@app.route('/anime-reads',methods=["GET"])
+def anime_reads():
+    with open('ani-reads.json','r') as f:
+        data = json.load(f)
+        return jsonify(data)
+@app.route('/new-manga',methods=["GET"])
+def new_manga():
+    with open('new-manga.json','r') as f:
+        data = json.load(f)
+        return jsonify(data)
 if __name__ == '__main__':
     app.run(host="0.0.0.0",debug=True)
