@@ -16,7 +16,7 @@ def popm(url):
     lis = soup.find('div',class_='main-col-inner')
     mangas = lis.find_all('div', class_='item-summary')
     for manga in mangas:
-        pop_mangas.append( {'url': getm(manga.find('h3').find('a')['href']) }) 
+        pop_mangas.append( getm(manga.find('h3').find('a')['href']) ) 
     return pop_mangas
 
 def getm(url):
@@ -51,7 +51,7 @@ def get_pages(url,ch):
     soup = BeautifulSoup(r.content,features='html.parser')
     imgs = soup.find('div',class_='read-container').find_all('img')
     for img in imgs:
-        pages.append(img['src'].strip())        
+        pages.append({'url':img['src'].strip()})        
     return pages
 if __name__ == '__main__':
     if len(sys.argv) == 1:
