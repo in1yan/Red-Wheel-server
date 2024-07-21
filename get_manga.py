@@ -2,13 +2,16 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import sys
+from fake_useragent import UserAgent
+ua = UserAgent()
+headers = {'User-Agent':ua.random}
 
 base_url = "https://readm.today"
 pop_url = "https://kissmanga.in/mangalist/?m_orderby=trending"
 new_url = "https://kissmanga.in/mangalist/?m_orderby=new-manga"
 def popm(url):
     pop_mangas=[]
-    r = requests.get(url)
+    r = requests.get(url,headers=headers)
     soup = BeautifulSoup(r.content,features='html.parser')
     lis = soup.find('div',class_='main-col-inner')
     mangas = lis.find_all('div', class_='item-summary')
@@ -18,7 +21,7 @@ def popm(url):
 
 def getm(url):
     manga_data = []
-    r = requests.get(url)
+    r = requests.get(url,headers=headers)
     soup = BeautifulSoup(r.content, features ='html.parser')
     title = soup.find('div',class_='post-title').find('h1').text
     poster = soup.find('div',class_='summary_image').find('img')['src']
@@ -35,7 +38,7 @@ def getm(url):
     return data
 def getnew(url):
     new_mangas=[]
-    r = requests.get(url)
+    r = requests.get(url,headers=headers)
     soup = BeautifulSoup(r.content,features='html.parser')
     lis = soup.find('div',class_='main-col-inner')
     mangas = lis.find_all('div', class_='item-summary')
@@ -44,7 +47,7 @@ def getnew(url):
     return new_mangas
 def get_pages(url,ch):
     pages = []
-    r=requests.get(f'{url}/chapter-{ch}')
+    r=requests.get(f'{url}/chapter-{ch}',headers=headers)
     soup = BeautifulSoup(r.content,features='html.parser')
     imgs = soup.find('div',class_='read-container').find_all('img')
     for img in imgs:
