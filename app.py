@@ -18,6 +18,8 @@ urls = []
 @app.route('/pages/',methods=['GET'])
 def pages():
     if request.method == 'GET':
+        url = request.args.get('url')
+        ch = request.args.get('ch')
         pages = gm.get_pages(url,ch)
         return jsonify(pages)
 @app.route('/popular',methods=['GET'])
