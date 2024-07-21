@@ -17,7 +17,7 @@ def popm(url):
     mangas = lis.find_all('div', class_='item-summary')
     for manga in mangas:
         pop_mangas.append( getm(manga.find('h3').find('a')['href']) ) 
-    return new_mangas
+    return pop_mangas
 
 def getm(url):
     manga_data = []
